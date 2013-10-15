@@ -192,7 +192,7 @@ public class MainActivity extends Activity implements PlatformActionListener {
 					opts2.inJustDecodeBounds = false;
 					opts.inJustDecodeBounds = false;
 					Bitmap mbitmap = getPicFromBytes(mContext, opts2);
-					File file = new File(Environment.getExternalStorageDirectory(),"/sdcard/YlseImgchooseTemp" + ".jpg");
+					File file = new File(Environment.getExternalStorageDirectory(),"/YlseImgchooseTemp" + ".jpg");
 					FileOutputStream outputStream = null;
 					try{
 						outputStream = new FileOutputStream(file);
