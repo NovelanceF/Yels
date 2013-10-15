@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#ffe1e1e1"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.65"
+        android:src="@drawable/toggle"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="拍一张"
+        android:gravity="center"
+        android:textColor="#ff999999"
+        android:background="#00000000"
+        android:layout_marginTop="65dp"
+        android:textSize="53sp" />
+    <LinearLayout 
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:background="#ffc7c7c7">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_choose_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="选择一张"
+        android:textColor="#ff999999"
+        android:background="#00000000"
+        android:layout_marginBottom="65dp"
+        android:textSize="53sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"/>
+
+</LinearLayout>

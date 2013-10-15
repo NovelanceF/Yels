@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity" >
+
+    <RelativeLayout
+        android:id="@+id/fakeactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/filter_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:textSize="20sp"
+            android:textColor="#ff555555"
+            android:text="@string/hello_world" />
+
+        <Button
+            android:id="@+id/weiboshare"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Share         "
+            android:textColor="#ff555555"
+            android:background="@drawable/social_send_now" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imagec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#ff989898" >
+
+        <ImageView
+            android:id="@+id/sample_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffe1e1e1" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:text="－这个样式是固定的－"
+            android:layout_marginTop="25dp"
+            android:id="@+id/notice"
+            android:textColor="#ff757575"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/save"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+       <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@drawable/radiolight"
+                android:visibility="gone"/>
+
+            <TextView 
+                android:id="@+id/radio0text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio0"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:text="Light   "/>
+       </RelativeLayout>
+       <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@drawable/radiomedium"
+                android:checked="true" 
+                android:visibility="gone"/>
+            <TextView 
+                android:id="@+id/radio1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio1"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:text="Medium   "/>
+       </RelativeLayout>
+       
+       <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerInParent="true"
+                android:button="@drawable/radioheavy"
+                android:visibility="gone"/>
+            <TextView 
+                android:id="@+id/radio2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio2"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:text="Heavy   "/>
+       </RelativeLayout>            
+        </LinearLayout>
+
+      <Button
+          android:id="@+id/save"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:background="@drawable/buttonsel"
+          android:text="保存图片"
+          android:textColor="#ff484848" />
+
+    </RelativeLayout>
+
+</LinearLayout>

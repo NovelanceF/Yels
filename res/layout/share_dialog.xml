@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/socialchoose"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/sharetoweibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/radioweibo"/>
+
+        <RadioButton
+            android:id="@+id/sharetotwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiotwitter"
+            android:button="@null" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/weiboedit"
+        android:padding="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/socialchoose"
+        android:background="@null"
+        android:textColor="#ff757575"
+        android:gravity="center"
+        android:maxLength="140"
+        android:hint="请输入微博内容" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/textnum"
+        android:layout_below="@+id/weiboedit"
+        android:textColor="#ffaaaaaa"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/samplepreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnum"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
