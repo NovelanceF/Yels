@@ -318,7 +318,7 @@ int drawable twitterp 0x7f0200a2
 int drawable twittersel 0x7f0200a3
 int drawable welcomeback 0x7f0200a4
 int drawable white_point 0x7f0200a5
-int drawable yalp 0x7f0200a6
+int drawable yels 0x7f0200a6
 int id Retake 0x7f05006e
 int id about 0x7f050078
 int id action_bar 0x7f05001f
