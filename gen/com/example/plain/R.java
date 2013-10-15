@@ -1166,7 +1166,7 @@ containing a value of this type.
         public static final int twittersel=0x7f0200a3;
         public static final int welcomeback=0x7f0200a4;
         public static final int white_point=0x7f0200a5;
-        public static final int yalp=0x7f0200a6;
+        public static final int yels=0x7f0200a6;
     }
     public static final class id {
         public static final int Retake=0x7f05006e;
