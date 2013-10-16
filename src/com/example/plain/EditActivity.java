@@ -467,7 +467,7 @@ public class EditActivity extends Activity {
 	private void showShare(boolean silent, String platform,String s) {
 		if(s.length() <= 140){
 			final OnekeyShare oks = new OnekeyShare();
-			oks.setNotification(R.drawable.ic_launcher, "Rylyn");
+			oks.setNotification(R.drawable.ic_launcher, "Yels");
 			oks.setAddress("12345678901");
 			oks.setTitleUrl("http://sharesdk.cn");
 			oks.setText(s);
